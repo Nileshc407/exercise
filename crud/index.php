@@ -44,7 +44,7 @@ function get_state(id){
 		success:function(res)
 		{
 			var response = JSON.parse(res);
-			if(response !=null){
+			if(response !=null){	
 				response.forEach(function(data){
 					selectOption = document.createElement('option');
 					selectOption.value = data.id;
